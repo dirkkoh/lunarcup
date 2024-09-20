@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 2nd Lunar Cup</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/logo_black.png" type="image/x-icon">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Hidden Riddle for a hidden puzzle-->
+    <link title="Hidden Riddle" rel="In a hero's tale, a story unfolds, A vibrant poster where adventure is told. Seek the right words that point the way, an ancient anchor is hiding on the bay.">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CMPH1ZKMLV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-CMPH1ZKMLV');
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Navbar section -->
+        <section class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid justify-content-center">
+                <img src="assets/img/logo_white.png" alt="Logo" class="navbar-logo" id="logo">
+                <img src="assets/img/logo_text_white.png" alt="Logo" class="navbar-logo-text">
+            </div>
+        </section>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content text-center">
+                <img src="assets/img/hero.png" alt="Hero Image" class="img-fluid">
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2 class="text-center">
+                Our Annual Mid-Autumn Party, The Lunar-Cup Tournament
+            </h2>
+            <p class="text-center" id="aboutContent">
+                We are thrilled to invite you to our Annual Mid-Autumn Party, The Lunar-Cup Tournament! As the full-moon
+                graces the night sky, we will come together for an evening with laughter, fun puzzle challenges and the
+                warm glow of lanterns guiding our way. Our scavenger hunt will take us on a journey through the spirit
+                of this cherished festival, where each twist and turn brings us closer to victory. During ancient times,
+                secret messages hidden in mooncakes helped the legendary king, Zhu Yuanzhang overthrow the Yuan dynasty,
+                restoring peace to the land. This inspiring story will guide our festivities as we come together to
+                celebrate tradition and friendship. Even Alto, will be there, ready to join the adventure. So gather
+                your crew and prepare to set sail on this unforgettable journey, as our very own ship through time and
+                heritage awaits!
+            </p>
+            <!-- This is an empty space -->
+            <div class="empty" id="empty"></div>
+        </section>
+        <!-- Footer Section -->
+        <section class="footer fixed-bottom container" >
+            <div class="row text-center footer-content" id="footer">
+                <div class="col-md-4 border p-1 footer-border">
+                    <p class="fw-bold mt-1"><i class="fa-solid fa-location-dot footer-icon"></i> Location</p>
+                    <p>Apartment 3, The Bartons,<br /> 1 Harrington Drive,<br /> NG7 1JQ, <span
+                            id="wrongCity">Liverpool</span></p>
+                </div>
+                <div class="col-md-4 border p-1 footer-border">
+                    <p class="fw-bold mt-1"><i class="fa-solid fa-calendar-days footer-icon" id="calendarIcon"></i> Date
+                    </p>
+                    <p>
+                        Saturday<br>
+                        26th October 2024<br>
+                        <span id="hiddenIcons">
+                            <i class="fa-solid fa-synagogue hidden-icon" id="hiddenTemple"></i>
+                            <i class="fa-solid fa-anchor hidden-icon" id="hiddenAnchor"></i>
+                            <i class="fa-solid fa-sailboat hidden-icon" id="hiddenSailboat"></i>
+                            <i class="fa-solid fa-location-crosshairs hidden-icon" id="hiddenCompass"></i>
+                        </span>
+                        
+                    </p>
+                    
+                </div>
+                <div class="col-md-4 border p-1 footer-border">
+                    <p class="fw-bold mt-1"><i class="fa-solid fa-clock footer-icon"></i> Time</p>
+                    <p>
+                        Open Door: 5pm<br>
+                        Dinner: 6pm <i id="dinnerMenu" class="fa-solid fa-scroll"></i><br>
+                        Scavenger: 7pm
+                    </p>
+                </div>
+            </div>
+            <div class="copyright row text-center text-white">
+                <p>
+                    <i class="fa-solid fa-copyright" id="copyright"></i> 2024 The Lunar-Cup. All rights reserved.
+                </p>
+            </div>
+        </section>
+    </div>
+    <!-- Scroll Popup -->
+    <div class="scroll-popup" id="scrollPopup">
+        <span id="closePopup" class="close">&times;</span>
+        <div class="p-3" id="scrollContent"></div>
+    </div>
+    <!-- Popup Message -->
+    <div class="alto-msg" id="altoMsg" >
+        <span id="closeMsg" class="close">&times;</span>
+        <div id="msgContent"></div>
+    </div>
+    <!-- Bootstrap 5 JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/platform/1.3.6/platform.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/scripts.obfuscated.js"></script>
+</body>
