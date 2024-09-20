@@ -1,0 +1,388 @@
+.container-fluid {
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.navbar {
+    z-index: 10; 
+    background: rgba(0, 0, 0, 0.5); 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-logo {
+    width: 80px;
+    height: 85px;
+    /* transform: rotate(20deg); */
+}
+
+.navbar-logo-text {
+    width: 200px;
+    height: 80px;
+}
+
+.hero {
+    position: relative;
+    min-height: 80vh;
+    background: url('../img/background.png') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero-clickable-alto {
+    /* background: rgba(0, 0, 0, 0.5);  */
+    position: absolute;
+    top: 56%; 
+    right: 30%; 
+    width: 150px; 
+    height: 150px; 
+    cursor: pointer;
+    z-index: 10; /* Ensure it's above the hero content */
+}
+
+.hero-clickable-mooncake {
+    /* background: rgba(0, 0, 0, 0.5);  */
+    position: absolute;
+    bottom: 15%; 
+    right: 46%; 
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    z-index: 10; 
+}
+
+.about {
+    background-color: #FFFDD0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+}
+
+.about h2 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    font-family: 'Pompiere', sans-serif;
+    font-size: 36px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.empty {
+    height: 300px;
+    width:500px;
+    font-size: 12px;  
+}
+
+.hidden-riddle {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: absolute; 
+    bottom: 0;
+    width: 100%;
+    margin-top: 200px;
+    z-index: 1; 
+}
+
+.hidden-riddle p {
+    font-size: 16px;
+    color: #FFFDD0;
+    /* color:black; */
+    /* opacity: 0.06; */
+}
+
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 10;
+}
+
+.footer-content {
+    min-height: 160px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    background-color: #FEE193;
+    color: #8E6547;
+}
+
+.footer-border {
+    border-color: #8E6547 !important;
+    flex: 1; /* Ensure each part takes equal space */
+    padding: 10px; 
+}
+
+.footer-border p {
+    font-family: cursive;
+    font-size: 16px;
+}
+
+.footer-icon {
+    font-size: 1rem; 
+}
+
+.hidden-icon {
+    display: none;
+    font-size: 3rem;
+}
+
+.copyright {
+    background: rgba(0, 0, 0, 0.9); 
+    height: 20px
+}
+
+.copyright p {
+    font-size: 14px;
+}
+
+.scroll-popup {
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px; 
+    height: 900px; 
+    background: url('../img/scroll.png') no-repeat center center/cover;
+    z-index: 1000; 
+    text-align: center;
+    font-family: 'Papyrus', fantasy;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.alto-msg {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; 
+    padding: 20px;
+    z-index: 10; 
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px; 
+    background-color: rgba(0,0,0,0.8);
+}
+
+.alto-icon {
+    height: 70px;
+    width: 50px;
+}
+
+.equation {
+    filter: brightness(0.8);
+    color: transparent;
+}
+
+.equation:hover {
+    color: white;
+}
+
+.latitude {
+    filter: brightness(0.2);
+    opacity: 0.08; /* Set low opacity */
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: rotate(-45deg);
+    font-size: 24px;
+    color: white;
+}
+
+.longitude {
+    filter: brightness(0.2);
+    opacity: 0.09; /* Set low opacity */
+    position: absolute;
+    bottom: 50%;
+    right: 20%;
+    transform: rotate(45deg);
+    font-size: 24px;
+    color: white;
+}
+
+.popup-img {
+    width: 278px;
+    height: 300px;
+}
+
+.popup-download {
+    color: transparent;
+    filter: brightness(0.8);
+    font-size: 8px;
+    cursor: default;
+}
+
+.popup-alto {
+    width: 370px; 
+    height: 132px; 
+}
+
+.icon-container {
+    font-size: 2.5rem; 
+    cursor: pointer;
+    text-align: center;
+}
+
+.popup-answer {
+    display:none;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.5s;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-15deg); }
+    50% { transform: rotate(15deg); }
+    75% { transform: rotate(-15deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.rotate {
+    animation: rotate 0.5s;
+}
+
+@media (max-width: 992px) {
+    .hero {
+        min-height: 60vh;
+    }
+
+    .hero-clickable-alto {
+        width: 100px; 
+        height: 100px;
+    }
+
+    .hero-clickable-mooncake {
+        width: 80px;
+        height: 80px;
+    }
+
+    .navbar-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .about h2 {
+        font-size: 32px;
+    }
+
+    .about p {
+        font-size: 18px;
+    }
+
+    .footer-border p {
+        font-size: 12px;
+    }
+
+    .copyright {
+        height: 25px;
+    }
+
+    .copyright p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 40vh;
+        min-width: 500px;
+    }
+
+    .hero-clickable-alto {
+        width: 60px; 
+        height: 60px;
+    }
+
+    .hero-clickable-mooncake {
+        width: 50px;
+        height: 50px;
+    }
+
+    .navbar-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .about {
+        min-width: 500px;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size: 16px;
+        max-width: 80%;
+    }
+
+    .footer-border p {
+        font-size: 10px;
+    }
+
+    .copyright {
+        height: 22px;
+    }
+
+    .copyright p {
+        font-size: 10px;
+    }
+
+    .scroll-popup {
+        width: 400px;
+        height: 850px;
+        font-size: 9px;
+    }
+}
